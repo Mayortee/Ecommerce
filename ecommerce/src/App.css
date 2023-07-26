@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  color: darkslategray;
+  text-decoration: none;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* style the header */
+header{
+  background-color: #666;
+  padding: 30px;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 0.1fr 0.1fr 1fr 0.1fr;
+}
+
+header a {
+  color: white;
+}
+
+#headerHomeIcon {
+  justify-self: start;
+}
+
+#headerTitle {
+  justify-self: center;
+}
+
+#headerCartIcon {
+  justify-self: end;
+}
+
+#search {
+  display:flex;
+}
+
+#search input {
+  margin-left: 10px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+/* container for flexboxes */
+section{
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* style the navigation menu */
+nav{
+  -webkit-flex: 0.5;
+  -ms-flex: 0.5;
+  flex: 0.5;
+  padding: 20px;
+  background-color: #ccc;
+}
+
+/* style the list inside the menu */
+nav ul{
+  padding: 0;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+nav ul li{
+  padding-bottom: 5px;
+}
+
+nav ul li:hover{
+  color: blue;
+}
+
+main{
+  padding-top: 20px;
+}
+
+/* style the footer */
+footer {
+  padding: 10px;
+  background-color: #777;
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
+
+/* responsive layout -makes the menu and content (inside the section) sit on top of each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
